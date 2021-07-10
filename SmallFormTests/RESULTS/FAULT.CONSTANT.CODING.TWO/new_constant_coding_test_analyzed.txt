@@ -1,0 +1,33 @@
+== Lines with faults
+      2 /root/fiaasco/fi-source/fi-test/./src/fi-test.c:13
+      6 /root/fiaasco/fi-source/fi-test/./src/fi-test.c:16
+      1 /root/fiaasco/fi-source/fi-test/./src/fi-test.c:21
+
+== Fault details
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:16
+Normal: 0x00000000 4 0800001a bne 0x28
+Faulty: 0x00000000 4 00000000 andeq r0, r0, r0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:13
+Normal: 0x00000000 4 020053e1 cmp r3, r2
+Faulty: 0x00000000 4 030053e1 cmp r3, r3
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:13
+Normal: 0x00000000 4 020053e1 cmp r3, r2
+Faulty: 0x00000000 4 020052e1 cmp r2, r2
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:16
+Normal: 0x00000000 4 0800001a bne 0x28
+Faulty: 0x00000000 4 0800009a bls 0x28
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:16
+Normal: 0x00000000 4 010053e3 cmp r3, 1
+Faulty: 0x00000000 4 010013e3 tst r3, 1
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:16
+Normal: 0x00000000 4 0800001a bne 0x28
+Faulty: 0x00000000 4 08000012 andne r0, r0, 8
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:16
+Normal: 0x00000000 4 0800001a bne 0x28
+Faulty: 0x00000000 4 0800000a beq 0x28
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:16
+Normal: 0x00000000 4 0800001a bne 0x28
+Faulty: 0x00000000 4 0800003a blo 0x28
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:21
+Normal: 0x00000000 4 f2ffffea b 0xffffffd0
+Faulty: 0x00000000 4 f0ffffea b 0xffffffc8

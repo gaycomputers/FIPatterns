@@ -1,0 +1,152 @@
+Verify functional behavior...
+>>> Ok!
+>>> FAIL!
+Verification finished.
+>>> Ok!
+Correct signature:
+Executed instructions: 569
+Unique instructions: 176
+>>> FAIL!
+Incorrect signature:
+Executed instructions: 641
+Unique instructions: 154
+5082
+InstructionFetchNopModel:Failed:000097ec:0C2093E5:00000000
+InstructionFetchNopModel:Exception:000097e8:03308FE0:00000000
+InstructionFetchNopModel:Failed:000097dc:E8109FE5:00000000
+InstructionFetchNopModel:Exception:000097d8:E8309FE5:00000000
+InstructionFetchNopModel:Exception:000097e0:0C308DE5:00000000
+InstructionFetchNopModel:Exception:000097e4:E4309FE5:00000000
+InstructionFetchNopModel:Exception:000097d4:1F402DE9:00000000
+InstructionFetchNopModel:Exception:00008024:EA0500EA:00000000
+InstructionFetchNopModel:Failed:000097f0:012022E0:00000000
+
+=================================================================
+	Native Crash Reporting
+=================================================================
+Got a SIGSEGV while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+/proc/self/maps:
+7ff90000-80000000 rwxp 00000000 00:00 0
+7febd0000000-7febd01b7000 rw-p 00000000 00:00 0
+7febd01b7000-7febd4000000 ---p 00000000 00:00 0
+7febd6200000-7febd6220000 rw-p 00000000 00:00 0
+7febd6400000-7febd6410000 rw-p 00000000 00:00 0
+7febd6600000-7febd6601000 rw-p 00000000 00:00 0
+7febd6800000-7febd6820000 rw-p 00000000 00:00 0
+7febd6a00000-7febd6a10000 rw-p 00000000 00:00 0
+7febd6c00000-7febd6c10000 rw-p 00000000 00:00 0
+7febd6e00000-7febd6e01000 rw-p 00000000 00:00 0
+7febd7000000-7febd7001000 rw-p 00000000 00:00 0
+7febd7200000-7febd7201000 rw-p 00000000 00:00 0
+7febd7400000-7febd7420000 rw-p 00000000 00:00 0
+7febd7600000-7febd7601000 rw-p 00000000 00:00 0
+7febd7800000-7febd7810000 rw-p 00000000 00:00 0
+7febd7a00000-7febd7a10000 rw-p 00000000 00:00 0
+7febd7c00000-7febd7c10000 rw-p 00000000 00:00 0
+7febd7e00000-7febd7e01000 rw-p 00000000 00:00 0
+7febd8000000-7febd891f000 rw-p 00000000 00:00 0
+7febd891f000-7febdc000000 ---p 00000000 00:00 0
+7febdc000000-7febdc8ee000 rw-p 00000000 00:00 0
+7febdc8ee000-7febe0000000 ---p 00000000 00:00 0
+7febe0000000-7febe08ee000 rw-p 00000000 00:00 0
+7febe08ee000-7febe4000000 ---p 00000000 00:00 0
+7febe4000000-7febe4001000 rw-p 00000000 00:00 0
+InstructionFetchNopModel:Failed:00009804:000092E5:00000000
+InstructionFetchNopModel:Failed:000097f4:08208DE5:00000000
+
+=================================================================
+	Native stacktrace:
+=================================================================
+	0x7fec0a55f397 - /usr/sbin/mono : (null)
+	0x7fec0a55f751 - /usr/sbin/mono : (null)
+	0x7fec0a50ae7b - /usr/sbin/mono : (null)
+	0x7fec0a5589aa - /usr/sbin/mono : (null)
+	0x7fec06c8fe8b - /usr/lib/libunicorn.so : (null)
+
+=================================================================
+	Telemetry Dumper:
+=================================================================
+Crash Reporter has timed out, sending SIGSEGV
+InstructionFetchNopModel:Exception:00009800:0C209DE5:00000000
+Pkilling 0x7fec07b80700 from 0x7febfdf40700
+Pkilling 0x7febfdd30700 from 0x7febfdf40700
+Pkilling 0x7febfe150700 from 0x7febfdf40700
+Pkilling 0x7febfe360700 from 0x7febfdf40700
+Pkilling 0x7febfe570700 from 0x7febfdf40700
+Pkilling 0x7febe69f0700 from 0x7febfdf40700
+Pkilling 0x7febe67e0700 from 0x7febfdf40700
+InstructionFetchNopModel:Failed:000097fc:04208DE5:00000000
+Pkilling 0x7fec0a0c0780 from 0x7febfdf40700
+Pkilling 0x7febfc210700 from 0x7febfdf40700
+Pkilling 0x7febfc420700 from 0x7febfdf40700
+Entering thread summarizer pause from 0x7febfdf40700
+Finished thread summarizer pause from 0x7febfdf40700.
+
+Waiting for dumping threads to resume
+InstructionFetchNopModel:Exception:00009854:04408FE0:00000000
+InstructionFetchNopModel:Failed:00009858:043094E5:00000000
+InstructionFetchNopModel:Failed:000097f8:D4209FE5:00000000
+InstructionFetchNopModel:Failed:00009810:0E00001A:00000000
+InstructionFetchNopModel:Failed:00009860:00308DE5:00000000
+InstructionFetchNopModel:Failed:00009808:04209DE5:00000000
+InstructionFetchNopModel:Exception:000096cc:30402DE9:00000000
+InstructionFetchNopModel:Failed:000096d8:04008DE5:00000000
+InstructionFetchNopModel:Failed:000096d4:D8509FE5:00000000
+InstructionFetchNopModel:Failed:00009864:08009DE5:00000000
+InstructionFetchNopModel:Failed:00009850:80409FE5:00000000
+InstructionFetchNopModel:Failed:00009868:97FFFFEB:00000000
+InstructionFetchNopModel:Failed:0000985c:013023E0:00000000
+
+=================================================================
+	External Debugger Dump:
+=================================================================
+mono_gdb_render_native_backtraces not supported on this platform, unable to find gdb or lldb
+InstructionFetchNopModel:Failed:000096f0:003095E5:00000000
+InstructionFetchNopModel:Exception:000096d0:14D04DE2:00000000
+InstructionFetchNopModel:Failed:000096fc:C33423E2:00000000
+InstructionFetchNopModel:Failed:000096dc:04309DE5:00000000
+InstructionFetchNopModel:Failed:000096e4:0330E0E1:00000000
+InstructionFetchNopModel:Exception:000096e0:05508FE0:00000000
+InstructionFetchNopModel:Failed:0000970c:C33C23E2:00000000
+
+=================================================================
+	Basic Fault Address Reporting
+=================================================================
+Memory around native instruction pointer (0x7fec06c8fe8b):0x7fec06c8fe7b  00 00 00 00 00 48 8b 87 58 01 00 00 66 0f ef c0  .....H..X...f...
+0x7fec06c8fe8b  48 8b 80 90 01 00 00 48 c7 80 40 01 00 00 00 00  H......H..@.....
+0x7fec06c8fe9b  00 00 0f 11 00 0f 11 40 10 0f 11 40 20 0f 11 40  .......@...@InstructionFetchNopModel:Failed:000096e8:0C308DE5:00000000
+ ..@
+0x7fec06c8feab  30 c3 0f 1f 00 83 fe 01 74 0b b8 0f 00 00 00 c3  0.......t.......
+
+=================================================================
+	Managed Stacktrace:
+=================================================================
+	  at <unknown> <0xffffffff>
+	  at Imported:uc_open <0x000c0>
+	  at instance@73-1:UnicornManaged-Binding-IBinding-UcOpen <0x0003f>
+	  at UnicornManaged.Unicorn:.ctor <0x00679>
+	  at UnicornManaged.Unicorn:.ctor <0x0006b>
+	  at FiSim.SimulatorEngine:.ctor <0x0009b>
+	  at FiSim.Platform.Arm32Simulator:.ctor <0x00043>
+	  at FiSim.Simulation:CreateSimulator <0x0006f>
+	  at FiSim.Simulation:_runFaultSimulation <0x0005f>
+	  at <>c__DisplayClass21_1:<RunSimulation>b__0 <0x0006f>
+	  at <>c__DisplayClass44_0`2:<PartitionerForEachWorker>b__1 <0x00419>
+	  at Replica`1:ExecuteAction <0x00054>
+	  at Replica:Execute <0x0007f>
+	  at <>c:<.ctor>b__4_0 <0x00057>
+	  at System.Threading.Tasks.Task:InnerInvoke <0x000a2>
+	  at System.Threading.Tasks.Task:Execute <0x0003b>
+	  at System.Threading.Tasks.Task:ExecutionContextCallback <0x0005f>
+	  at System.Threading.ExecutionContext:RunInternal <0x001b6>
+	  at System.Threading.ExecutionContext:Run <0x00047>
+	  at System.Threading.Tasks.Task:ExecuteWithThreadLocal <0x00113>
+	  at System.Threading.Tasks.Task:ExecuteEntry <0x000c7>
+	  at System.Threading.Tasks.Task:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem <0x0002b>
+	  at System.Threading.ThreadPoolWorkQueue:Dispatch <0x002f6>
+	  at System.Threading._ThreadPoolWaitCallback:PerformWaitCallback <0x00063>
+	  at <Module>:runtime_invoke_bool <0x00086>
+=================================================================

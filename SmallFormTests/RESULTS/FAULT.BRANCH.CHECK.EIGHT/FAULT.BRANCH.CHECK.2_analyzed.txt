@@ -1,0 +1,7 @@
+== Lines with faults
+      1 /root/fiaasco/fi-source/fi-test/./src/fi-test.c:9
+
+== Fault details
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:9
+Normal: 0x00000000 4 1a00000a beq 0x70
+Faulty: 0x00000000 4 0a00000a beq 0x30

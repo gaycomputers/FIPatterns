@@ -1,0 +1,301 @@
+== Lines with faults
+      1 /root/fiaasco/fi-source/fi-test/./common/main.c:38
+      1 /root/fiaasco/fi-source/fi-test/./common/main.c:40
+      8 /root/fiaasco/fi-source/fi-test/./common/main.c:53
+     15 /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+     38 /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+     27 /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+      7 /root/fiaasco/fi-source/fi-test/./src/fi-test.c:9
+
+== Fault details
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:9
+Normal: 0x00000000 4 0500001a bne 0x1c
+Faulty: 0x00000000 4 00000000 andeq r0, r0, r0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 00000000 andeq r0, r0, r0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 f9ffffda ble 0xffffffec
+Faulty: 0x00000000 4 00000000 andeq r0, r0, r0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 00000000 andeq r0, r0, r0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 f2ffff0a beq 0xffffffd0
+Faulty: 0x00000000 4 00000000 andeq r0, r0, r0
+= /root/fiaasco/fi-source/fi-test/./common/main.c:53
+Normal: 0x00000000 4 030052e1 cmp r2, r3
+Faulty: 0x00000000 4 00000000 andeq r0, r0, r0
+= /root/fiaasco/fi-source/fi-test/./common/main.c:38
+Normal: 0x00000000 4 a4309fe5 ldr r3, [pc, 0xa4]
+Faulty: 0x00000000 4 ac309fe5 ldr r3, [pc, 0xac]
+= /root/fiaasco/fi-source/fi-test/./common/main.c:40
+Normal: 0x00000000 4 0a00001a bne 0x30
+Faulty: 0x00000000 4 0800001a bne 0x28
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:9
+Normal: 0x00000000 4 030052e1 cmp r2, r3
+Faulty: 0x00000000 4 030053e1 cmp r3, r3
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:9
+Normal: 0x00000000 4 030052e1 cmp r2, r3
+Faulty: 0x00000000 4 020052e1 cmp r2, r2
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:9
+Normal: 0x00000000 4 0500001a bne 0x1c
+Faulty: 0x00000000 4 1500001a bne 0x5c
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:9
+Normal: 0x00000000 4 0500001a bne 0x1c
+Faulty: 0x00000000 4 05000012 andne r0, r0, 5
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:9
+Normal: 0x00000000 4 0500001a bne 0x1c
+Faulty: 0x00000000 4 0500000a beq 0x1c
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:9
+Normal: 0x00000000 4 0500001a bne 0x1c
+Faulty: 0x00000000 4 0500005a bpl 0x1c
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 00b0a003 moveq fp, 0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 0030a083 movhi r3, 0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 0c308de5 str r3, [sp, 0xc]
+Faulty: 0x00000000 4 0d308de5 str r3, [sp, 0xd]
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 090052e3 cmp r2, 9
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 0c308de5 str r3, [sp, 0xc]
+Faulty: 0x00000000 4 0e308de5 str r3, [sp, 0xe]
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 0c309de5 ldr r3, [sp, 0xc]
+Faulty: 0x00000000 4 0c309fe5 ldr r3, [pc, 0xc]
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 0c309de5 ldr r3, [sp, 0xc]
+Faulty: 0x00000000 4 04309de5 ldr r3, [sp, 4]
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 1030a003 moveq r3, 0x10
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 090073e3 cmn r3, 9
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 00308003 orreq r3, r0, 0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 2030a003 moveq r3, 0x20
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 090013e3 tst r3, 9
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 0900d3e3 bics r0, r3, 9
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 4030a003 moveq r3, 0x40
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 090053e1 cmp r3, sb
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 8030a003 moveq r3, 0x80
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 0030a002 adceq r3, r0, 0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 0c309de5 ldr r3, [sp, 0xc]
+Faulty: 0x00000000 4 0c309de7 ldr r3, [sp, ip]
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 0030a001 moveq r3, r0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 0c309de5 ldr r3, [sp, 0xc]
+Faulty: 0x00000000 4 0c309de7 ldr r3, [sp, ip]
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 0c308de5 str r3, [sp, 0xc]
+Faulty: 0x00000000 4 0c208de5 str r2, [sp, 0xc]
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 0030a013 movne r3, 0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 0020a003 moveq r2, 0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 0030a043 movmi r3, 0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 0010a003 moveq r1, 0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 0c309de5 ldr r3, [sp, 0xc]
+Faulty: 0x00000000 4 04309de5 ldr r3, [sp, 4]
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 f9ffffda ble 0xffffffec
+Faulty: 0x00000000 4 f9ffff5a bpl 0xffffffec
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 080053e3 cmp r3, 8
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:14
+Normal: 0x00000000 4 0030a003 moveq r3, 0
+Faulty: 0x00000000 4 0070a003 moveq r7, 0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 0b0053e3 cmp r3, 0xb
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 033083e2 add r3, r3, 3
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 0d0053e3 cmp r3, 0xd
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 013082e2 add r3, r2, 1
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0b0053e3 cmp r3, 0xb
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 f9ffffda ble 0xffffffec
+Faulty: 0x00000000 4 f9ffffde mrcle p15, 7, apsr_nzcv, c15, c9, 7
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 010053e3 cmp r3, 1
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 093083e2 add r3, r3, 9
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 190053e3 cmp r3, 0x19
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 080053e3 cmp r3, 8
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 f9ffffda ble 0xffffffec
+Faulty: 0x00000000 4 f9ffffca bgt 0xffffffec
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 290053e3 cmp r3, 0x29
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a005363 cmpvs r3, 0xa
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a0052e3 cmp r2, 0xa
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0e0053e3 cmp r3, 0xe
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 490053e3 cmp r3, 0x49
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a0051e3 cmp r1, 0xa
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 113083e2 add r3, r3, 0x11
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 890053e3 cmp r3, 0x89
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 213083e2 add r3, r3, 0x21
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 020053e3 cmp r3, 2
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a0057e3 cmp r7, 0xa
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 1a0053e3 cmp r3, 0x1a
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 090053e3 cmp r3, 9
+Faulty: 0x00000000 4 090253e3 cmp r3, 0x90000000
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 413083e2 add r3, r3, 0x41
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 0130a3e2 adc r3, r3, 1
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a005be3 cmp fp, 0xa
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 2a0053e3 cmp r3, 0x2a
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 813083e2 add r3, r3, 0x81
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a0043e3 movt r0, 0x300a
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 4a0053e3 cmp r3, 0x4a
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 f2ffff0a beq 0xffffffd0
+Faulty: 0x00000000 4 f2ffff8a bhi 0xffffffd0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 013183e2 add r3, r3, 0x40000000
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 8a0053e3 cmp r3, 0x8a
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a0073e3 cmn r3, 0xa
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 013283e2 add r3, r3, 0x10000000
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a0153e3 cmp r3, 0x80000002
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a0013e3 tst r3, 0xa
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 013483e2 add r3, r3, 0x1000000
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a0253e3 cmp r3, 0xa0000000
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a0453e3 cmp r3, 0xa000000
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:15 (discriminator 3)
+Normal: 0x00000000 4 013083e2 add r3, r3, 1
+Faulty: 0x00000000 4 013883e2 add r3, r3, 0x10000
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a0853e3 cmp r3, 0xa0000
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 0a0053e3 cmp r3, 0xa
+Faulty: 0x00000000 4 0a0053e1 cmp r3, sl
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 f2ffff0a beq 0xffffffd0
+Faulty: 0x00000000 4 f2ffff0e mrceq p15, 7, apsr_nzcv, c15, c2, 7
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 f2ffff0a beq 0xffffffd0
+Faulty: 0x00000000 4 f2ffff1a bne 0xffffffd0
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:17
+Normal: 0x00000000 4 f2ffff0a beq 0xffffffd0
+Faulty: 0x00000000 4 f2ffff4a bmi 0xffffffd0
+= /root/fiaasco/fi-source/fi-test/./common/main.c:53
+Normal: 0x00000000 4 030052e1 cmp r2, r3
+Faulty: 0x00000000 4 020052e1 cmp r2, r2
+= /root/fiaasco/fi-source/fi-test/./common/main.c:53
+Normal: 0x00000000 4 030052e1 cmp r2, r3
+Faulty: 0x00000000 4 030053e1 cmp r3, r3
+= /root/fiaasco/fi-source/fi-test/./common/main.c:53
+Normal: 0x00000000 4 030052e1 cmp r2, r3
+Faulty: 0x00000000 4 030042e1 mrs r0, spsr
+= /root/fiaasco/fi-source/fi-test/./common/main.c:53
+Normal: 0x00000000 4 0200000a beq 0x10
+Faulty: 0x00000000 4 0200001a bne 0x10
+= /root/fiaasco/fi-source/fi-test/./common/main.c:53
+Normal: 0x00000000 4 0200000a beq 0x10
+Faulty: 0x00000000 4 0200004a bmi 0x10
+= /root/fiaasco/fi-source/fi-test/./common/main.c:53
+Normal: 0x00000000 4 030052e1 cmp r2, r3
+Faulty: 0x00000000 4 030052c1 cmpgt r2, r3
+= /root/fiaasco/fi-source/fi-test/./common/main.c:53
+Normal: 0x00000000 4 030052e1 cmp r2, r3
+Faulty: 0x00000000 4 03005261 cmpvs r2, r3

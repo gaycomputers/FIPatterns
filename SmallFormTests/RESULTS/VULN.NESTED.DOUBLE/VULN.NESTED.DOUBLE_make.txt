@@ -1,0 +1,6 @@
+bin//test-fi-test
+>>> Ok!
+>>> Ok!
+Test failed
+OK   case was deadbeef and should be deadbeef
+FAIL case was deadbeef and should be cafebabe

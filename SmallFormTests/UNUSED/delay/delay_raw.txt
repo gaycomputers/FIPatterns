@@ -1,0 +1,194 @@
+Verify functional behavior...
+>>> Ok!
+>>> Fail!
+Verification finished.
+>>> Ok!
+Correct signature:
+Executed instructions: 558
+Unique instructions: 165
+>>> Fail!
+Incorrect signature:
+Executed instructions: 635
+Unique instructions: 148
+4884
+InstructionFetchNopModel:Failed:0000978c:0C2093E5:00000000
+InstructionFetchNopModel:Failed:0000977c:E0109FE5:00000000
+InstructionFetchNopModel:Failed:00009790:012022E0:00000000
+InstructionFetchNopModel:Exception:00009778:E0309FE5:00000000
+InstructionFetchNopModel:Exception:00009784:DC309FE5:00000000
+InstructionFetchNopModel:Exception:00009780:0C308DE5:00000000
+InstructionFetchNopModel:Exception:00009774:1F402DE9:00000000
+InstructionFetchNopModel:Exception:00009788:03308FE0:00000000
+InstructionFetchNopModel:Exception:00008024:D20500EA:00000000
+InstructionFetchNopModel:Exception:000097a0:0C209DE5:00000000
+InstructionFetchNopModel:Failed:000097a4:000092E5:00000000
+InstructionFetchNopModel:Failed:00009798:CC209FE5:00000000
+InstructionFetchNopModel:Failed:000097e8:84409FE5:00000000
+InstructionFetchNopModel:Failed:000097b0:0C00001A:00000000
+
+=================================================================
+	Native Crash Reporting
+=================================================================
+Got a SIGSEGV while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+/proc/self/maps:
+InstructionFetchNopModel:Failed:00009794:08208DE5:00000000
+7ff90000-80000000 rwxp 00000000 00:00 0
+7fd2f5800000-7fd2f6000000 rwxp 00000000 00:00 0
+7fd2f6400000-7fd2f6401000 rw-p 00000000 00:00 0
+7fd2f6600000-7fd2f6e00000 rwxp 00000000 00:00 0
+7fd2f7200000-7fd2f7a00000 rwxp 00000000 00:00 0
+7fd2f7a00000-7fd2f7a01000 rw-p 00000000 00:00 0
+7fd2f7c00000-7fd2f7c20000 rw-p 00000000 00:00 0
+7fd2f7e00000-7fd2f7e10000 rw-p 00000000 00:00 0
+7fd2f8000000-7fd2f88e4000 rw-p 00000000 00:00 0
+7fd2f88e4000-7fd2fc000000 ---p 00000000 00:00 0
+7fd2fc000000-7fd2fc909000 rw-p 00000000 00:00 0
+7fd2fc909000-7fd300000000 ---p 00000000 00:00 0
+7fd300200000-7fd301a00000 rwxp 00000000 00:00 0
+7fd301c00000-7fd301c01000 rw-p 00000000 00:00 0
+7fd301e00000-7fd301e01000 rw-p 00000000 00:00 0
+7fd301ef0000-7fd302ef0000 rwxp 00000000 00:00 0
+7fd303000000-7fd303010000 rw-p 00000000 00:00 0
+7fd303200000-7fd303220000 rw-p 00000000 00:00 0
+7fd303400000-7fd303410000 rw-p 00000000 00:00 0
+7fd303600000-7fd303601000 rw-p 00000000 00:00 0
+7fd3036f0000-7fd3036f1000 ---p 00000000 00:00 0
+7fd3036f1000-7fd3036f2000 rw-p 00000000 00:00 0
+7fd3036f2000-7fd3036fa000 ---p 00000000 00:00 0
+7fd3036fa000-7fd3038f1000 rw-p 00000000 00:00 0
+7fd303a00000-7fd303a01000 rw-p 00000000 00:00 0
+InstructionFetchNopModel:Failed:0000979c:04208DE5:00000000
+InstructionFetchNopModel:Failed:000097a8:04209DE5:00000000
+InstructionFetchNopModel:Failed:000097ac:020050E1:00000000
+Cannot transition thread 0x7fd323140700 from STATE_BLOCKING with BEGIN_NO_SAFEPOINTSInstructionFetchNopModel:Exception:000097ec:04408FE0:00000000
+InstructionFetchNopModel:Failed:000097fc:08009DE5:00000000
+InstructionFetchNopModel:Failed:000097f8:00308DE5:00000000
+InstructionFetchNopModel:Failed:000097f0:083094E5:00000000
+InstructionFetchNopModel:Failed:000096d0:84409FE5:00000000
+InstructionFetchNopModel:Failed:00009800:B1FFFFEB:00000000
+InstructionFetchNopModel:Failed:000096d4:04008DE5:00000000
+InstructionFetchNopModel:Failed:000096d8:04309DE5:00000000
+InstructionFetchNopModel:Exception:000096cc:7F402DE9:00000000
+InstructionFetchNopModel:Failed:000096e0:0330E0E1:00000000
+InstructionFetchNopModel:Failed:00009700:0F00001A:00000000
+InstructionFetchNopModel:Failed:000096f0:003094E5:00000000
+InstructionFetchNopModel:Failed:000096e8:70609FE5:00000000
+InstructionFetchNopModel:Exception:000096dc:04408FE0:00000000
+InstructionFetchNopModel:Failed:000096f8:063023E0:00000000
+InstructionFetchNopModel:Exception:00009654:0F002DE9:00000000
+InstructionFetchNopModel:Failed:000096e4:0C308DE5:00000000
+InstructionFetchNopModel:Exception:00009748:00008FE0:00000000
+InstructionFetchNopModel:Failed:000096ec:005094E5:00000000
+InstructionFetchNopModel:Exception:0000965c:10482DE9:00000000
+InstructionFetchNopModel:Exception:00009744:24009FE5:00000000
+InstructionFetchNopModel:Failed:000096f4:04209DE5:00000000
+InstructionFetchNopModel:Failed:0000974c:C0FFFFEB:00000000
+InstructionFetchNopModel:Failed:00009664:0CD04DE2:00000000
+InstructionFetchNopModel:Exception:00009658:0010A0E3:00000000
+InstructionFetchNopModel:Failed:000096fc:020053E1:00000000
+InstructionFetchNopModel:Failed:00009674:0100A0E1:00000000
+InstructionFetchNopModel:Failed:0000966c:08308BE2:00000000
+InstructionFetchNopModel:Failed:00009668:04409BE5:00000000
+InstructionFetchNopModel:Exception:00009660:08B08DE2:00000000
+InstructionFetchNopModel:Failed:0000967c:95FBFFEB:00000000
+InstructionFetchNopModel:Failed:000084dc:0340A0E1:00000000
+InstructionFetchNopModel:Exception:00009678:0420A0E1:00000000
+InstructionFetchNopModel:Failed:000084fc:03B0A0E1:00000000
+InstructionFetchNopModel:Exception:000084ec:C4D04DE2:00000000
+InstructionFetchNopModel:Failed:00009670:10300BE5:00000000
+InstructionFetchNopModel:Exception:000084e4:0290A0E1:00000000
+InstructionFetchNopModel:Failed:000084f4:00A0E0E3:00000000
+InstructionFetchNopModel:Exception:000084d8:F04F2DE9:00000000
+InstructionFetchNopModel:Failed:00008504:0020A003:00000000
+InstructionFetchNopModel:Failed:00008500:A222A0E1:00000000
+InstructionFetchNopModel:Failed:000084f0:122F6FE1:00000000
+InstructionFetchNopModel:Exception:0000850c:1C008DE5:00000000
+InstructionFetchNopModel:Failed:000084e0:0030A0E3:00000000
+InstructionFetchNopModel:Failed:000084e8:032040E0:00000000
+InstructionFetchNopModel:Failed:000084f8:030051E1:00000000
+InstructionFetchNopModel:Failed:0000851c:5C308DE5:00000000
+InstructionFetchNopModel:Failed:00008508:030052E1:00000000
+InstructionFetchNopModel:Failed:00008514:01C0D9E4:00000000
+InstructionFetchNopModel:Failed:00008534:1500001A:00000000
+InstructionFetchNopModel:Failed:00008594:050053E3:00000000
+InstructionFetchNopModel:Failed:000085c4:5C209DE5:00000000
+InstructionFetchNopModel:Timeout:0000859c:050000EA:00000000
+InstructionFetchNopModel:Failed:0000852c:20208DE5:00000000
+InstructionFetchNopModel:Failed:00008510:0120A001:00000000
+InstructionFetchNopModel:Failed:00008520:0300A0E1:00000000
+InstructionFetchNopModel:Failed:00008598:03F18F90:00000000
+InstructionFetchNopModel:Failed:000085c8:20109DE5:00000000
+InstructionFetchNopModel:Failed:000085d4:5C308DE5:00000000
+InstructionFetchNopModel:Failed:00008518:0310A0E1:00000000
+InstructionFetchNopModel:Timeout:00008590:013041E2:00000000
+InstructionFetchNopModel:Failed:000085b8:25005CE3:00000000
+InstructionFetchNopModel:Failed:00008530:00005CE3:00000000
+InstructionFetchNopModel:Failed:000085cc:013082E2:00000000
+InstructionFetchNopModel:Failed:00008524:24308DE5:00000000
+InstructionFetchNopModel:Failed:000085bc:0110A003:00000000
+InstructionFetchNopModel:Exception:000085e4:0920A0E1:00000000
+InstructionFetchNopModel:Exception:00008538:20209DE5:00000000
+InstructionFetchNopModel:Exception:000085d8:1C109D35:00000000
+InstructionFetchNopModel:Exception:000085d0:010053E1:00000000
+InstructionFetchNopModel:Failed:00008558:000052E3:00000000
+InstructionFetchNopModel:Failed:00008528:0320A011:00000000
+InstructionFetchNopModel:Failed:000085c0:0700000A:00000000
+InstructionFetchNopModel:Exception:00008548:1C109D35:00000000
+InstructionFetchNopModel:Failed:0000853c:5C309DE5:00000000
+InstructionFetchNopModel:Failed:000085dc:02C0C137:00000000
+InstructionFetchNopModel:Timeout:000085e8:01C0D2E4:00000000
+InstructionFetchNopModel:Failed:0000857c:0100001A:00000000
+InstructionFetchNopModel:Exception:0000858c:F08FBDE8:00000000
+InstructionFetchNopModel:Failed:0000855c:0400000A:00000000
+InstructionFetchNopModel:Exception:0000968c:0420A0E1:00000000
+InstructionFetchNopModel:Timeout:000085ec:0290A0E1:00000000
+InstructionFetchNopModel:Failed:000085e0:0010A0E3:00000000
+InstructionFetchNopModel:Failed:0000854c:0320C137:00000000
+InstructionFetchNopModel:Failed:00008540:020053E1:00000000
+InstructionFetchNopModel:Failed:00008580:000053E1:00000000
+InstructionFetchNopModel:Failed:00009680:083080E2:00000000
+InstructionFetchNopModel:Failed:00009690:03D04DE0:00000000
+InstructionFetchNopModel:Failed:0000969c:8DFBFFEB:00000000
+InstructionFetchNopModel:Failed:00009684:011080E2:00000000
+InstructionFetchNopModel:Failed:00008584:0300A0A1:00000000
+InstructionFetchNopModel:Failed:00008550:0700003A:00000000
+InstructionFetchNopModel:Timeout:000085f0:CEFFFFEA:00000000
+InstructionFetchNopModel:Failed:00009694:10301BE5:00000000
+InstructionFetchNopModel:Failed:00008574:00005CE3:00000000
+InstructionFetchNopModel:Exception:000096a0:01204DE2:00000000
+InstructionFetchNopModel:Failed:00008544:0020A033:00000000
+InstructionFetchNopModel:Failed:00009688:0730C3E3:00000000
+InstructionFetchNopModel:Exception:00008588:C4D08DE2:00000000
+InstructionFetchNopModel:Exception:00009698:0D00A0E1:00000000
+InstructionFetchNopModel:Failed:00008554:20209DE5:00000000
+InstructionFetchNopModel:Failed:000096a4:0912A0E3:00000000
+InstructionFetchNopModel:Exception:000096ac:000053E3:00000000
+InstructionFetchNopModel:Failed:00009750:14009FE5:00000000
+InstructionFetchNopModel:Failed:00008578:0000E0E3:00000000
+InstructionFetchNopModel:Failed:00009808:60109FE5:00000000
+InstructionFetchNopModel:Timeout:00009740:F9FFFFEA:00000000
+InstructionFetchNopModel:Failed:00009818:030052E1:00000000
+InstructionFetchNopModel:Exception:000096b4:08D04BE2:00000000
+InstructionFetchNopModel:Failed:00009754:083094E5:00000000
+InstructionFetchNopModel:Timeout:000096a8:0130F2E5:00000000
+InstructionFetchNopModel:Failed:0000980c:042094E5:00000000
+InstructionFetchNopModel:Timeout:00009828:122083E5:00000000
+InstructionFetchNopModel:Exception:0000972c:10D08DE2:00000000
+InstructionFetchNopModel:Failed:0000981c:0300000A:00000000
+InstructionFetchNopModel:Exception:00009758:F7FFFFEA:00000000
+InstructionFetchNopModel:Timeout:000096b8:1048BDE8:00000000
+InstructionFetchNopModel:Failed:000096b0:0300001A:00000000
+InstructionFetchNopModel:Failed:00009810:00309DE5:00000000
+InstructionFetchNopModel:Timeout:00009730:7080BDE8:00000000
+InstructionFetchNopModel:Failed:0000973c:030020E0:00000000
+InstructionFetchNopModel:Exception:000096bc:10D08DE2:00000000
+InstructionFetchNopModel:Failed:000096c4:0130C1E5:00000000
+InstructionFetchNopModel:Failed:00009814:012022E0:00000000
+InstructionFetchNopModel:Exception:00009820:9F34A0E3:00000000
+InstructionFetchNopModel:Failed:00009804:00008DE5:00000000
+InstructionFetchNopModel:Timeout:000096c8:F6FFFFEA:00000000
+InstructionFetchNopModel:Exception:000096c0:1EFF2FE1:00000000
+InstructionFetchNopModel:-559038737:00009824:0220A0E3:00000000

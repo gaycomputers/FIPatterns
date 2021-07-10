@@ -1,0 +1,7 @@
+gcc -DFITEST -Icommon/ -g -std=c99 -Wall -Wno-discarded-qualifiers -Wno-int-conversion          ./common/entry.S ./common/main.c ./common/md5.c ./common/platform.c ./common/snprintf.c                   ./src/fi-test.c    -o bin//test-fi-test
+bin//test-fi-test
+>>> Ok!
+>>> Ok!
+Test failed
+OK   case was deadbeef and should be deadbeef
+FAIL case was deadbeef and should be cafebabe

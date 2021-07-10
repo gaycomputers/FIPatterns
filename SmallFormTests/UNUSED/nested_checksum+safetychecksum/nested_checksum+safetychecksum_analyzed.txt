@@ -1,0 +1,11 @@
+== Lines with faults
+      1 /root/fiaasco/fi-source/fi-test/./common/main.c:40
+      1 /root/fiaasco/fi-source/fi-test/./src/fi-test.c:26
+
+== Fault details
+= /root/fiaasco/fi-source/fi-test/./common/main.c:40
+Normal: 0x00000000 4 0c00001a bne 0x38
+Faulty: 0x00000000 4 0800001a bne 0x28
+= /root/fiaasco/fi-source/fi-test/./src/fi-test.c:26
+Normal: 0x00000000 4 f6ffffea b 0xffffffe0
+Faulty: 0x00000000 4 f4ffffea b 0xffffffd8

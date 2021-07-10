@@ -1,0 +1,8 @@
+gcc -DFITEST -Icommon/ -g -std=c99 -Wall -Wno-discarded-qualifiers -Wno-int-conversion          ./common/entry.S ./common/main.c ./common/md5.c ./common/platform.c ./common/snprintf.c                   ./src/fi-test.c    -o bin//test-fi-test
+bin//test-fi-test
+>>> FAIL!
+>>> Ok!
+Test succeeded
+# Link the object files, or archive into a static library
+arm-none-eabi-gcc -Icommon/ -mcpu=cortex-a7 -nostdlib -Os -fomit-frame-pointer -fPIC -flto -DPAYLOAD_SIZE=256 -g -std=c99 -Wall -Wno-discarded-qualifiers -Wno-int-conversion          ./common/entry.S ./common/main.c ./common/md5.c ./common/platform.c ./common/snprintf.c                   ./src/fi-test.c   -lgcc -Wl,-T,../linker  -o bin//fi-test.elf
+arm-none-eabi-objcopy -O binary bin//fi-test.elf bin//fi-test.bin

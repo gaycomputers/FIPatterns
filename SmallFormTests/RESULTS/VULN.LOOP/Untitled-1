@@ -1,0 +1,19 @@
+Register:
+
+               When a register is changed in an instruction.
+
+          Operand/Offset:
+
+               When the operand or offset are changed in an instruction.
+
+          Flag/Cond:
+
+                When the flag or condition are changed in an instruction.
+
+          Opcode:
+
+                When the opcode of a store, load or move instruction is bitflipped to a new opcode.
+
+          NOP:
+
+               When an instruction is skipped or made null.
